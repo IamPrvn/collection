@@ -1,0 +1,42 @@
+following are the opertaions :-
+
+Add: Add a given string to the collection.
+Ask: Ask if there exists a group of k strings such that they have a common suffix of length l .
+Removei: Remove the string that was added in the ith operation (if the string is not already removed). It is guaranteed that ith operation was an Add operation.
+
+
+Input
+First line of input contains an integer q denoting the total number of operations Harsh does. q lines follow in the following format.
+
+1 s Add the string s(all lowercase characters) to Aniket's collection of strings.
+2 k l Ask if there exists a group of k strings such that they have a common suffix of length l.
+3 x Remove the string added in the xth operation (if not already removed).
+
+Output
+Print the answer to all the Ask operations in different lines. Print "YES" if it exists else print "NO".
+
+Constraints
+1 ≤ q ≤ 105
+1 ≤ |s| (sum of lengths of all strings added to the collection) ≤ 105
+1 ≤ k,l ≤ 105
+1 ≤ x ≤ number of operations done yet
+
+Example
+Input 1:
+9
+1 aba
+1 accba
+2 2 2
+2 2 3
+1 aaaa
+1 ababa
+2 3 2
+3 1
+2 3 2
+
+
+Output 1:
+YES
+NO
+YES
+NO
